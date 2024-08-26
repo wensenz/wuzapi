@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_wensenz_wuzapi_1724665057798-pr-trigger-input-set
+  identifier: Build_wensenz_wuzapi_1724665057798prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_wensenz_wuzapi_1724665057798
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
