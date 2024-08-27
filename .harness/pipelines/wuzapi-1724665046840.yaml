@@ -20,14 +20,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: gitpull
-                  name: git_pull
-                  spec:
-                    shell: Sh
-                    command: git clone git@github.com:wensenz/wuzapi.git && cd wuzapi
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: gobuild
                   name: go_build
                   spec:
@@ -35,6 +27,7 @@ pipeline:
                     command: go build .
                   timeout: ""
                   type: Run
+                  description: 构建应用
               - step:
                   identifier: dockerbuild
                   name: docker_build
