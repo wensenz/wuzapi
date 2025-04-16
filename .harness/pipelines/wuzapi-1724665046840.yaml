@@ -27,6 +27,7 @@ pipeline:
                     command: go build .
                   timeout: ""
                   type: Run
+                  description: 构建应用
               - step:
                   identifier: dockerbuild
                   name: docker_build
